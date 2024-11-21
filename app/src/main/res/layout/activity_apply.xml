@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/white"
+        tools:context=".ApplyActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <!-- Top Section: Back Button, Title -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center">
+
+            <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_back"
+                    android:contentDescription="@string/go_back"
+                    app:tint="@color/black" />
+
+            <View
+                    android:layout_width="100dp"
+                    android:layout_height="0dp" />
+
+            <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply Loan"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="serif" />
+
+        </LinearLayout>
+
+        <!-- Profile Section -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+            <FrameLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp">
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/outer_ring" />
+
+                <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profile_ic"
+                        android:background="@drawable/circle_background"
+                        android:scaleType="centerCrop" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!-- Name and Loan Information -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_gravity="center">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boweii"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:textSize="21sp"
+                    android:layout_gravity="center" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maximum $20,000 USD"
+                    android:textSize="18sp"
+                    android:layout_margin="6dp"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <!-- Amount Display and Keypad Section -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+            <!-- Amount Display -->
+            <EditText
+                    android:id="@+id/editTextAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:cursorVisible="false"
+                    android:background="@android:color/transparent"
+                    android:text="$ 0"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:padding="8dp" />
+
+            <!-- Divider -->
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="16dp"
+                    android:background="#E0E0E0" />
+
+            <!-- Keypad -->
+            <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:rowCount="4"
+                    android:alignmentMode="alignMargins"
+                    android:layout_gravity="center">
+
+                <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:text="1"
+                        android:background="@android:color/transparent"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:text="2"
+                        android:background="@android:color/transparent"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:text="3"
+                        android:background="@android:color/transparent"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                <Button
+                        android:id="@+id/btn4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:text="4"
+                        android:background="@android:color/transparent"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                <Button
+                        android:id="@+id/btn5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:text="5"
+                        android:background="@android:color/transparent"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                <Button
+                        android:id="@+id/btn6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:text="6"
+                        android:background="@android:color/transparent"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                <Button
+                        android:id="@+id/btn7"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:text="7"
+                        android:background="@android:color/transparent"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                <Button
+                        android:id="@+id/btn8"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:text="8"
+                        android:background="@android:color/transparent"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                <Button
+                        android:id="@+id/btn9"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:text="9"
+                        android:background="@android:color/transparent"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                <Button
+                        android:id="@+id/btn0"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:text="0"
+                        android:background="@android:color/transparent"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                <Button
+                        android:id="@+id/btnDelete"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:text="⌫"
+                        android:background="@android:color/transparent"
+                        android:textColor="#FF5722"
+                        android:textSize="24sp" />
+            </GridLayout>
+
+            <!-- Action Button -->
+            <Button
+                    android:id="@+id/btnSendMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:backgroundTint="#FF5722"
+                    android:text="Send Money"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

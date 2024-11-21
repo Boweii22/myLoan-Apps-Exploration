@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid color for the background -->
+    <solid android:color="#FF4081"/> <!-- You can change this to any color you want -->
+
+    <!-- Rounded corners -->
+    <corners android:radius="16dp"/> <!-- Adjust the radius for roundness -->
+
+    <!-- Optional: Adding a shadow effect -->
+    <padding
+            android:left="4dp"
+            android:top="4dp"
+            android:right="4dp"
+            android:bottom="4dp" />
+</shape>

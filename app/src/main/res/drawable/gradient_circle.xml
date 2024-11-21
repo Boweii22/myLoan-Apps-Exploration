@@ -1,0 +1,32 @@
+<!-- res/drawable/gradient_circle.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gradient Circle Stroke -->
+    <item android:right="5dp" android:left="5dp" android:top="5dp" android:bottom="5dp">
+        <shape
+                android:shape="oval">
+            <stroke
+                    android:width="10dp"
+                    android:color="@android:color/transparent" />
+            <gradient
+                    android:startColor="#FF7F50"
+                    android:endColor="#FF1493"
+                    android:angle="45"/>
+            <solid android:color="@android:color/transparent"/>
+            <size
+                    android:width="150dp"
+                    android:height="150dp"/>
+            <corners android:radius="75dp"/>
+        </shape>
+    </item>
+    <!-- Solid Fill Circle -->
+    <item>
+        <shape
+                android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+            <size
+                    android:width="140dp"
+                    android:height="140dp"/>
+            <corners android:radius="70dp"/>
+        </shape>
+    </item>
+</layer-list>

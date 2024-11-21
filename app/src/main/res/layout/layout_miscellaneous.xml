@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+
+              android:id="@+id/layoutMiscellaneous"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:elevation="4dp"
+              android:gravity="center"
+              android:background="@drawable/background_miscellaneous"
+              android:orientation="vertical"
+              android:padding="13dp"
+              app:behavior_peekHeight="37dp"
+              app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <!-- Horizontal Divider -->
+    <View
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/icon_background"
+            android:elevation="2dp" />
+
+    <TextView
+            android:id="@+id/textMiscellaneous"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:text="Loan Friends"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="19sp"
+    />
+    
+    <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="11dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/add_icon_background">
+
+
+                <ImageView
+                        android:id="@+id/addFriends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_add"
+                        app:tint="@color/white" />
+            </FrameLayout>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Add"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+            <!-- Friend 1 -->
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/friend_icon_background">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/friend1" />
+                </FrameLayout>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Alice"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <!-- Friend 2 -->
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/friend_icon_background">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/friend2" />
+                </FrameLayout>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Bob"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <!-- Friend 3 -->
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/friend_icon_background">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/friend3" />
+                </FrameLayout>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Cathy"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <!-- Friend 4 -->
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/friend_icon_background">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/friend4" />
+                </FrameLayout>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="David"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <!-- Friend 5 -->
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/friend_icon_background">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/friend6" />
+                </FrameLayout>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Ella"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <!-- Friend 6 -->
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/friend_icon_background">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/friend7" />
+                </FrameLayout>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Frank"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+            android:id="@+id/swipeButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="14dp"
+            android:orientation="horizontal"
+            android:background="@drawable/swipe_button_background"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+        <!-- Icon Container -->
+        <FrameLayout
+                android:id="@+id/ticketIconFrame"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ticket_icon_background"
+                android:gravity="center">
+
+            <ImageView
+                    android:id="@+id/ticketIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_ticket"
+                    android:contentDescription="@null" />
+        </FrameLayout>
+
+        <!-- Text Section -->
+        <LinearLayout
+                android:id="@+id/textContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+            <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get off 20%"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/subtitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For loan up to $3,000"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Arrow Icon -->
+        <ImageView
+                android:id="@+id/arrowIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_arrow"
+                android:contentDescription="@null" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string-array name="background_colors">
+        <item>White</item>
+        <item>Light Gray</item>
+        <item>Dark Gray</item>
+    </string-array>
+    <string-array name="background_values">
+        <item>white</item>
+        <item>#D3D3D3</item>
+        <item>#A9A9A9</item>
+    </string-array>
+</resources>
